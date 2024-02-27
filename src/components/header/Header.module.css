@@ -39,7 +39,7 @@
 
 .contactButton:hover {
   background-color: #fff;
-  color: grey;
+  color: rgb(0, 0, 0);
   border-color: white;
 }
 

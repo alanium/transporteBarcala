@@ -1,0 +1,25 @@
+.full-screen-container {
+  display: flex;
+  height: 100vh; /* Ocupar toda la altura de la pantalla */
+}
+
+.image-container {
+  flex: 1; /* Ocupar todo el espacio disponible */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Ajustes para mostrar las imágenes una al lado de la otra */
+.image-container {
+  width: 33.33%;
+}
+
+.image-container:not(:last-child) {
+  border-right: none; /* Eliminar el borde derecho del último contenedor */
+}
