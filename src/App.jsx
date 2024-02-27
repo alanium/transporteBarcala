@@ -15,7 +15,7 @@ import { Pagination } from "swiper/modules";
 function App() {
   return (
     <div className="principal-container">
-      <Header />
+      
       <Swiper
         direction={"vertical"}
         pagination={{
@@ -24,10 +24,14 @@ function App() {
         modules={[Pagination]}
         className="mySwiper"
       >
+        
         <SwiperSlide>
+        <div className="principal-container">
+        <Header />
           <div>
             <CalculateDistance />
             <ContactButton />
+          </div>
           </div>
         </SwiperSlide>
 

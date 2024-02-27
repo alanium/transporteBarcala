@@ -1,49 +1,49 @@
 .header {
-    color: #fff;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 9999;
-  }
-  
-  .left {
-    display: flex;
-  }
-  
-  .icon {
-    font-size: 20px;
-    margin-right: 10px;
-    color: white;
-  }
-  
-  .center {
-    font-size: 24px;
-  }
-  
-  .right {
-    font-size: 18px;
-  }
-  
-  .contactButton {
-    border: 1px solid #fff; /* Borde de 1px blanco */
-    border-radius: 20px; /* Bordes redondos */
-    background-color: transparent; /* Sin fondo */
-    color: #fff; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno */
-    cursor: pointer;
-    transition: background-color 0.5s, color 0.5s; /* Transición más larga de 0.5s */
-    font-size: 15px;
-    margin-right: 20px;
+  color: #fff;
+  padding: 10px;
+  width: 100%; /* Ajustar el ancho al 100% */
+  display: grid; /* Usar display grid */
+  grid-template-columns: 1fr auto 1fr; /* Distribuir el espacio en tres columnas */
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.842)); /* Gradiente desde abajo (transparente) a arriba (negro) */
 
-  }
-  
-  .contactButton:hover {
-    background-color: #fff; /* Cambia el fondo a blanco en hover */
-    color: grey; /* Cambia el color del texto a negro en hover */
-    border-color: white;
-  }
-  
+}
+
+
+.left {
+  justify-content: flex-start; /* Alinear a la izquierda */
+}
+
+.right {
+  justify-content: flex-end; /* Alinear a la derecha */
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+}
+
+.contactButton {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  font-size: 15px;
+}
+
+.contactButton:hover {
+  background-color: #fff;
+  color: grey;
+  border-color: white;
+}
+
+.logoHeader {
+  width: 100px;
+  height: auto;
+}

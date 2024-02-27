@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Header.module.css";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
+import logo from "../../assets/logo.png"
 
 function Header() {
   const phoneNumber = '123-456-7890'; // Número de teléfono del propietario
@@ -20,6 +21,8 @@ function Header() {
           <FaFacebook className={styles.icon} />
         </a>
       </div>
+      <img src={logo} alt="Logo de la empresa" className={styles.logoHeader} />
+
       <div className={styles.right}>
         <button className={styles.contactButton} onClick={handleContact}>
           {phoneNumber}
