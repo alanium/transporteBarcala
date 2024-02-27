@@ -1,0 +1,49 @@
+.header {
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .left {
+    display: flex;
+  }
+  
+  .icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+  }
+  
+  .center {
+    font-size: 24px;
+  }
+  
+  .right {
+    font-size: 18px;
+  }
+  
+  .contactButton {
+    border: 1px solid #fff; /* Borde de 1px blanco */
+    border-radius: 20px; /* Bordes redondos */
+    background-color: transparent; /* Sin fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s; /* Transición más larga de 0.5s */
+    font-size: 15px;
+    margin-right: 20px;
+
+  }
+  
+  .contactButton:hover {
+    background-color: #fff; /* Cambia el fondo a blanco en hover */
+    color: grey; /* Cambia el color del texto a negro en hover */
+    border-color: white;
+  }
+  
