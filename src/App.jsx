@@ -15,14 +15,14 @@ function App() {
   };
 
   return (
-    <>
+    <div className="principal-container">
       <h1>Transporte barcala</h1>
       <div className="content">
         <CalculateDistance />
         <Reviews placeId={placeId} />
         <ContactButton />
       </div>
-    </>
+    </div>
   );
 }
 

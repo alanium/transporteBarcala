@@ -1,8 +1,14 @@
 #root {
   max-width: 100%;
   margin: 0 auto;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
+.principal-container{
+  height: 100vh;
+}
 
 
 
