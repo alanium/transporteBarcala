@@ -1,0 +1,61 @@
+.reviewsContainer {
+  width: 100%;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 100vh;
+  margin: 10px;
+}
+
+.cardHeader {
+  padding: 10px;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardBody {
+  padding: 10px;
+}
+
+.rating {
+  color: gold;
+  text-shadow: 1px 0 0 black, -1px 0 0 black, 0 1px 0 black, 0 -1px 0 black;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.parallaxBg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.blackBg {
+  background-color: rgba(0, 0, 0, 0.733);
+  width: 100%;
+  height: 100%;
+}
