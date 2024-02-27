@@ -10,7 +10,6 @@ function ContactButton() {
 
   return (
     <div>
-      <h2>Contactar al Propietario</h2>
       <button onClick={handleContact}>Contactar</button>
     </div>
   );

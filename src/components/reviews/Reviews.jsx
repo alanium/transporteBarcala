@@ -50,9 +50,6 @@ const Reviews = ({ placeId }) => {
         <div
           slot="container-start"
           className={styles.parallaxBg}
-          style={{
-            "background-image": `url(${imagen})`,
-          }}
           data-swiper-parallax="-23%"
         >
           <div className={styles.blackBg}></div>
