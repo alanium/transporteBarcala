@@ -73,12 +73,6 @@
     display: block; /* Muestra el icono de teléfono en dispositivos móviles */
   }
 
-  .header{
-    
-    padding-top: 60px;
-  }
-
-
   .logoHeader {
     width: 80px;
   }
