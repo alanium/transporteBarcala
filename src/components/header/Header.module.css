@@ -11,6 +11,7 @@
 }
 
 
+
 .left {
   justify-content: flex-start; /* Alinear a la izquierda */
 }
@@ -59,12 +60,6 @@
 .phoneIcon {
   font-size: 24px;
   color: white;
-}
-
-
-.phoneIcon {
-  font-size: 24px;
-  color: white;
   cursor: pointer;
 }
 
@@ -77,4 +72,15 @@
   .phoneIcon {
     display: block; /* Muestra el icono de teléfono en dispositivos móviles */
   }
+
+  .header{
+    
+    padding-top: 60px;
+  }
+
+
+  .logoHeader {
+    width: 80px;
+  }
+
 }

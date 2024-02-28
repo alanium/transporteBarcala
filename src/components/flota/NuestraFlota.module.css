@@ -87,5 +87,9 @@
   .image {
     width: 40vh;
     height: 40vh;
+    
+  }
+  .full-screen-container {
+    padding-top: 50px;
   }
 }
