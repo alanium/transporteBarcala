@@ -8,6 +8,8 @@ import Reviews from "./components/reviews/Reviews";
 import GoogleMap from "./components/googleMapWidget/GoogleMapWidget";
 import Flota from "./components/flota/NuestraFlota";
 import Body from "./components/body/Body";
+import Horarios from "./components/horarios/Horarios";
+
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -28,29 +30,33 @@ function App() {
         <SwiperSlide>
           <div className="principal-container">
             <div className="background">
-            <Header />
-            <div>
-              <CalculateDistance />
-              <ContactButton />
-            </div>
-            <div>
-              <Body />
-            </div>
+              <Header />
+              <div>
+                <CalculateDistance />
+                <ContactButton />
+              </div>
+              <div>
+                <Body />
+              </div>
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="white-background">
           <Flota />
+          <Horarios />
+          
         </SwiperSlide>
 
         <SwiperSlide className="white-background">
-          
-          <Reviews placeId={"ChIJ8ZQp-Mu4vJURoCAJDdkRaNg"} />
-          <GoogleMap
-            latitude={-34.62693224571751}
-            longitude={-58.6405821570769}
-          />
+          <div>
+            <Reviews placeId={"ChIJ8ZQp-Mu4vJURoCAJDdkRaNg"} />
+            <GoogleMap
+              latitude={-34.62693224571751}
+              longitude={-58.6405821570769}
+            />
+            
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>

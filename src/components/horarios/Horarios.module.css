@@ -1,0 +1,66 @@
+.container {
+    background-color: #4896d6; /* Color pastel */
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+
+  .left {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .right {
+    flex: 1;
+  }
+  
+  .location {
+    font-size: 1.8rem;
+  }
+  
+  .contact {
+    font-size: 1.2rem;
+    color: #ffffff; /* Color azul */
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 400 !important; /* Agregando !important */
+    letter-spacing: -1px;
+    line-height: 1.1;
+  }
+  
+  .schedule {
+    font-size: 1.2rem;
+  }
+  
+  .day {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .time {
+    margin-left: 10px;
+  }
+  
+  .button {
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #ffffff00; /* Color azul */
+    border: 2px solid white;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 60%;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #ffffff3d;
+  }
+
+  .icon {
+    margin-right: 5px;
+  }
+  
