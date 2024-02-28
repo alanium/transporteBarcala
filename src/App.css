@@ -7,12 +7,17 @@
 }
 
 .principal-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   height: 100vh;
 }
 
+.background{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.39);
+  width: 100%;
+  height: 100%;
+}
 
 .swiper {
   width: 100%;
@@ -27,3 +32,6 @@
   align-items: center;
 }
 
+.white-background {
+  background-color: #e5e5e5;
+}

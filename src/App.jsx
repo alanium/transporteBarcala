@@ -7,6 +7,7 @@ import ContactButton from "./components/ContactButton";
 import Reviews from "./components/reviews/Reviews";
 import GoogleMap from "./components/googleMapWidget/GoogleMapWidget";
 import Flota from "./components/flota/NuestraFlota";
+import Body from "./components/body/Body";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -26,24 +27,30 @@ function App() {
       >
         <SwiperSlide>
           <div className="principal-container">
+            <div className="background">
             <Header />
             <div>
               <CalculateDistance />
               <ContactButton />
             </div>
+            <div>
+              <Body />
+            </div>
+            </div>
           </div>
         </SwiperSlide>
 
-        <SwiperSlide>
-        <Flota />
+        <SwiperSlide className="white-background">
+          <Flota />
         </SwiperSlide>
 
-        <SwiperSlide>
+        <SwiperSlide className="white-background">
+          
+          <Reviews placeId={"ChIJ8ZQp-Mu4vJURoCAJDdkRaNg"} />
           <GoogleMap
             latitude={-34.62693224571751}
             longitude={-58.6405821570769}
           />
-          <Reviews placeId={"ChIJ8ZQp-Mu4vJURoCAJDdkRaNg"} />
         </SwiperSlide>
       </Swiper>
     </div>
