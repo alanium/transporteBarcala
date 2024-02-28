@@ -35,7 +35,7 @@ function Horarios() {
           <FontAwesomeIcon 
           icon={faEnvelope} 
           className={styles.icon} 
-          /> Contáctanos
+          /> 
         </button>
         {contactModalVisible && (
         <ContactButton

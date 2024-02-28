@@ -26,12 +26,10 @@ function App() {
   };
 
   const handleContactSubmit = (formData) => {
-    const phoneNumber = "+5491131486466";
+    const phoneNumber = '+5491131486466';
     const message = `Hola, soy ${formData.name}. Mi dirección de origen es ${formData.origin} y mi dirección de destino es ${formData.destination}. ¿Podríamos discutir más detalles sobre el servicio?`;
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
-    window.open(whatsappLink, "_blank");
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, '_blank');
     setContactModalVisible(false);
   };
 
@@ -51,9 +49,7 @@ function App() {
               <Header />
               <div>
                 <CalculateDistance />
-                <button className="bttn" onClick={openContactModal}>
-                  Contactar
-                </button>
+                <button className="bttn" onClick={openContactModal}>Contactar</button>
               </div>
               <div>
                 <Body />
@@ -63,14 +59,15 @@ function App() {
         </SwiperSlide>
 
         <SwiperSlide className="white-background">
-          <div className="full-screen-container">
-            <div className="flota">
-              <Flota />
-            </div>
-            <div className="horarios">
-              <Horarios />
-            </div>
-          </div>
+        <div className="full-screen-container">
+  <div className="flota">
+    <Flota />
+  </div>
+  <div className="horarios">
+    <Horarios />
+  </div>
+</div>
+
         </SwiperSlide>
 
         <SwiperSlide className="white-background">

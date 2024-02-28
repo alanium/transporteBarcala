@@ -27,12 +27,10 @@
 .swiperContainer {
   width: 80%;
   height: 80%;
-  position: relative; /* Añadir posición relativa */
+  position: relative;
 }
 
 .image-container {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,9 +39,11 @@
 
 .image {
   width: 50vh;
+  height: 50vh;
   object-fit: contain;
   border-radius: 10px;
 }
+
 
 .p {
   font-size: 1.2rem;
@@ -81,4 +81,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) { /* Cambiar a 40vh en dispositivos móviles */
+  .image {
+    width: 40vh;
+    height: 40vh;
+  }
 }
