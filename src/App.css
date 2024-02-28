@@ -58,3 +58,36 @@
   width: 100%; /* Ocupa todo el ancho */
   height: 35vh; /* Ocupa el 30% de la altura del contenedor */
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.reviews-container {
+  flex: 7; /* Ocupa el 70% del contenedor principal */
+  justify-content: center;
+  align-items: center;
+  padding-top: 30vh;
+}
+
+.third-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: flex-end; /* Alinear en la parte inferior */
+  width: 100%;
+  max-width: 800px; /* Ancho máximo */
+  padding-bottom: 50vh;
+}
+
+
