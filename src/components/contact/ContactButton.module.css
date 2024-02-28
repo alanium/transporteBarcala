@@ -1,8 +1,3 @@
-.container {
-  text-align: center;
-  margin-top: 50px;
-}
-
 .popup {
   position: fixed;
   top: 0;
@@ -21,9 +16,20 @@
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border: 1px solid white
+  border: 1px solid white;
 }
 
+.closeButton {
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: black;
+  border: 1px solid white
+}
 
 .popupContent h2 {
   margin-bottom: 20px;
@@ -36,7 +42,7 @@
   font-size: 16px;
 }
 
-.calculateButton {
+.popupContent button {
   margin-top: 10px;
   padding: 10px 20px;
   background-color: #000000;
@@ -69,3 +75,29 @@
 .bttn:hover {
   color: black;
 }
+
+.popupContent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popupContent label {
+  display: flex;
+  justify-content: space-between; /* Espacio entre texto y input */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.popupContent label span {
+  margin-right: 10px; /* Espacio entre el texto y el input */
+}
+
+.popupContent input {
+  width: calc(50% - 20px); /* Resta el espacio del padding */
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+

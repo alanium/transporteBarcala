@@ -3,7 +3,7 @@ import "./App.css";
 
 import Header from "./components/header/Header";
 import CalculateDistance from "./components/calculateDistance/CalculateDistance";
-import ContactButton from "./components/ContactButton";
+import ContactButton from "./components/contact/ContactButton";
 import Reviews from "./components/reviews/Reviews";
 import GoogleMap from "./components/googleMapWidget/GoogleMapWidget";
 import Flota from "./components/flota/NuestraFlota";
@@ -32,7 +32,7 @@ function App() {
             <div className="background">
               <Header />
               <div>
-                <CalculateDistance />
+                <CalculateDistance/>
                 <ContactButton />
               </div>
               <div>

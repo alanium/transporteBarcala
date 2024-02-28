@@ -55,7 +55,7 @@ function CalculateDistance() {
       {popupVisible && (
         <div className={styles.popup}>
           <div className={styles.popupContent}>
-            <button onClick={togglePopup} className={styles.closeButton}>Cerrar</button>
+            
             <h2>Calcular Distancia</h2>
             <select
               value={selectedLocation}
@@ -68,11 +68,17 @@ function CalculateDistance() {
               ))}
             </select>
             <button onClick={handleCalculateDistance} className={styles.calculateButton}>Calcular</button>
+            <button onClick={togglePopup} className={styles.calculateButton}>Cerrar</button>
             {distance && <p>La distancia es: {distance}</p>}
           </div>
         </div>
       )}
-      <button onClick={togglePopup}>Calcular distancia</button>
+      <button 
+      onClick={togglePopup}
+      className={styles.bttn}
+      >
+        Calcular distancia
+        </button>
     </div>
   );
 }

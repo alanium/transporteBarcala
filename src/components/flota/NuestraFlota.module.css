@@ -10,12 +10,16 @@
 .title {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #000000; /* Cambiar el color del título */
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: 400 !important;
+  letter-spacing: -1px;
+  line-height: 1.1;
 }
 
 .divider {
-  width: 100%; /* Ajusta el ancho del divisor según sea necesario */
-  height: 1px; /* Ajusta el grosor del divisor según sea necesario */
+  width: 80%; /* Ajusta el ancho del divisor según sea necesario */
+  height: 1.1px; /* Ajusta el grosor del divisor según sea necesario */
   background-color: #c4c4c4; /* Cambiar el color del divisor */
   margin-bottom: 20px; /* Espacio entre el título y el divisor */
 }
