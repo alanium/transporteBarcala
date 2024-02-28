@@ -36,3 +36,15 @@
   background-color: #e5e5e5;
 }
 
+.bttn {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.bttn:hover {
+  color: black;
+}

@@ -16,7 +16,7 @@
 }
 
 .right {
-  justify-content: flex-end; /* Alinear a la derecha */
+  justify-content: flex-end;
 }
 
 .icon {
@@ -45,4 +45,36 @@
 .logoHeader {
   width: 100px;
   height: auto;
+}
+
+.IconButton {
+  border: 2px solid white;
+  padding: 10px;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.phoneIcon {
+  font-size: 24px;
+  color: white;
+}
+
+
+.phoneIcon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Media query para dispositivos con una anchura máxima de 768px (típicamente dispositivos móviles) */
+@media (max-width: 768px) {
+  .contactButton {
+    display: none; /* Oculta el botón en dispositivos móviles */
+  }
+
+  .phoneIcon {
+    display: block; /* Muestra el icono de teléfono en dispositivos móviles */
+  }
 }

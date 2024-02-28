@@ -26,3 +26,10 @@
   background-color: #ffffff;
   color: black;
 }
+
+.bttnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+

@@ -2,20 +2,15 @@ import React, { useState } from 'react';
 import styles from './CalculateDistance.module.css';
 
 function CalculateDistance() {
-  const [selectedLocation, setSelectedLocation] = useState('');
+  const [origin, setOrigin] = useState('');
+  const [destination, setDestination] = useState('');
   const [distance, setDistance] = useState(null);
-  const [popupVisible, setPopupVisible] = useState(false); // Estado para controlar la visibilidad del popup
+  const [popupVisible, setPopupVisible] = useState(false);
 
+  // Coordenadas geográficas predefinidas
+  const originCoordinates = { lat: -34.6269269, lon: -58.6431527 }; // Coordenadas de un lugar en Buenos Aires
+  const destinationCoordinates = { lat: -34.6154321, lon: -58.4598423 }; // Coordenadas de otro lugar en Buenos Aires
 
-  // Localidades con sus coordenadas geográficas (latitud y longitud)
-  const locations = [
-    { name: 'Boulogne', lat: -34.4881, lon: -58.5498 },
-    { name: 'Ballester', lat: -34.5456, lon: -58.5547 },
-    { name: 'San Martín', lat: -34.5734, lon: -58.5382 },
-    { name: 'San Isidro', lat: -34.4747, lon: -58.5253 },
-    // Puedes agregar más localidades de Buenos Aires según sea necesario
-  ];
-  
   // Función para calcular la distancia entre dos puntos geográficos utilizando la fórmula de Haversine
   const calculateDistance = (lat1, lon1, lat2, lon2) => {
     const R = 6371; // Radio de la Tierra en kilómetros
@@ -30,55 +25,60 @@ function CalculateDistance() {
   };
 
   const handleCalculateDistance = () => {
-    if (!selectedLocation) {
-      alert('Por favor seleccione una ubicación');
+    if (!origin || !destination) {
+      alert('Por favor ingrese tanto el origen como el destino');
       return;
     }
 
-    // Ubicación predefinida (por ejemplo, latitud y longitud de una ubicación específica)
-    const predefinedLocation = { lat: -34.6269269, lon: -58.6431527 };
-
-    // Obtener las coordenadas geográficas de la localidad seleccionada por el usuario
-    const location = locations.find(loc => loc.name === selectedLocation);
-
     // Calcular la distancia utilizando la fórmula de Haversine
-    const calculatedDistance = calculateDistance(location.lat, location.lon, predefinedLocation.lat, predefinedLocation.lon);
+    const calculatedDistance = calculateDistance(
+      originCoordinates.lat,
+      originCoordinates.lon,
+      destinationCoordinates.lat,
+      destinationCoordinates.lon
+    );
 
-    // Actualizar el estado de 'distance' con la distancia calculada
     setDistance(`${calculatedDistance} km`);
   };
+
   const togglePopup = () => {
     setPopupVisible(!popupVisible);
   };
+
   return (
     <div>
       {popupVisible && (
         <div className={styles.popup}>
           <div className={styles.popupContent}>
-            
             <h2>Calcular Distancia</h2>
-            <select
-              value={selectedLocation}
-              onChange={e => setSelectedLocation(e.target.value)}
-              className={styles.select}
-            >
-              <option value="">Seleccione una localidad</option>
-              {locations.map(location => (
-                <option key={location.name} value={location.name}>{location.name}</option>
-              ))}
-            </select>
+            <label>Origen 
+            <input
+              type="text"
+              value={origin}
+              onChange={(e) => setOrigin(e.target.value)}
+              className={styles.input}
+            />
+            </label>
+            
+
+            <label>Destino 
+            <input
+              type="text"
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
+              className={styles.input}
+            />
+            </label>
+            
             <button onClick={handleCalculateDistance} className={styles.calculateButton}>Calcular</button>
             <button onClick={togglePopup} className={styles.calculateButton}>Cerrar</button>
             {distance && <p>La distancia es: {distance}</p>}
           </div>
         </div>
       )}
-      <button 
-      onClick={togglePopup}
-      className={styles.bttn}
-      >
+      <button onClick={togglePopup} className={styles.bttn}>
         Calcular distancia
-        </button>
+      </button>
     </div>
   );
 }

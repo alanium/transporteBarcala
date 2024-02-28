@@ -16,25 +16,8 @@
   z-index: 9999;
 }
 
-.popupContent {
-  background-color: rgb(0, 0, 0);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border: 1px solid white
-}
 
 
-.popupContent h2 {
-  margin-bottom: 20px;
-}
-
-.popupContent select {
-  margin-bottom: 10px;
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-}
 
 .calculateButton {
   margin-top: 10px;
@@ -52,11 +35,6 @@
   background-color: #0056b3;
 }
 
-.popupContent p {
-  margin-top: 10px;
-  font-size: 16px;
-}
-
 .bttn {
   background: transparent;
   border: none;
@@ -68,4 +46,38 @@
 
 .bttn:hover {
   color: black;
+}
+
+
+.popupContent {
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 1px solid white
+}
+
+.popupContent form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popupContent label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.popupContent label span {
+  margin-right: 10px;
+}
+
+.popupContent input {
+  width: calc(70% - 20px);
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
 }
