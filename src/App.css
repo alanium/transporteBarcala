@@ -67,7 +67,7 @@
 
 
 .reviews-container {
-  flex: 7; /* Ocupa el 70% del contenedor principal */
+  flex: 7;
   justify-content: center;
   align-items: center;
   padding-top: 30vh;
@@ -90,4 +90,16 @@
   padding-bottom: 50vh;
 }
 
+@media (max-width: 768px) {
+  .flota {
+    height: 60vh;
+  }
+  .map-container {
+    padding-bottom: 65vh;
+  }
 
+  .reviews-container {
+    padding-top: 20vh;
+    padding-bottom: 5vh;
+  }
+}

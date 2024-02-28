@@ -74,21 +74,18 @@ function App() {
         </SwiperSlide>
 
         <SwiperSlide className="white-background">
-        <div className="reviews-container">
-    <Reviews placeId={"ChIJ8ZQp-Mu4vJURoCAJDdkRaNg"} />
-  </div>
-        <div className="third-container">
-  
-  <div className="map-container">
-    <GoogleMap
-      latitude={-34.62693224571751}
-      longitude={-58.6405821570769}
-    />
-  </div>
-</div>
-
+          <div className="reviews-container">
+            <Reviews placeId={"ChIJ8ZQp-Mu4vJURoCAJDdkRaNg"} />
+          </div>
+          <div className="third-container">
+            <div className="map-container">
+              <GoogleMap
+                latitude={-34.62693224571751}
+                longitude={-58.6405821570769}
+              />
+            </div>
+          </div>
         </SwiperSlide>
-
       </Swiper>
       {contactModalVisible && (
         <ContactButton
