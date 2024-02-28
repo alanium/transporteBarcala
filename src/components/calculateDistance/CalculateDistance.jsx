@@ -66,7 +66,7 @@ function CalculateDistance() {
       {popupVisible && (
         <div className={styles.popup}>
           <div className={styles.popupContent}>
-            <h2>Calcular Distancia</h2>
+            <h2>Calcular precio por viaje</h2>
             <label>Origen:
             <input
               type="text"
@@ -88,6 +88,8 @@ function CalculateDistance() {
             
             <button onClick={handleCalculateDistance} className={styles.calculateButton}>Calcular</button>
             <button onClick={togglePopup} className={styles.calculateButton}>Cerrar</button>
+            <p style={{fontSize:"13px"}}>Recuerda, este es solo un estimado, el precio puede no estar sujeto a este calculo.</p>
+
             {distance && <p>La distancia es: {distance}</p>}
             {distance && <p>El precio por 1 viaje es: ${(parseFloat(distance) * 1000).toFixed(2)}</p>}
 
@@ -96,7 +98,7 @@ function CalculateDistance() {
         </div>
       )}
       <button onClick={togglePopup} className={styles.bttn}>
-        Calcular distancia
+        Calcular precio
       </button>
     </div>
   );

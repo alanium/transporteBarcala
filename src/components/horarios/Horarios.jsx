@@ -18,7 +18,7 @@ function Horarios() {
   };
 
   const handleContactSubmit = (formData) => {
-    const phoneNumber = '+5491169473198';
+    const phoneNumber = '+5491131486466';
     const message = `Hola, soy ${formData.name}. Mi dirección de origen es ${formData.origin} y mi dirección de destino es ${formData.destination}. ¿Podríamos discutir más detalles sobre el servicio?`;
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');

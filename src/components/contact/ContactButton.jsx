@@ -25,7 +25,7 @@ function ContactButton({ buttonText, title, onSubmit, onClose }) {
   return (
     <div className={styles.popup}>
       <div className={styles.popupContent}>
-        <h2>{title}</h2>
+        <h2>Contactar</h2>
         <form onSubmit={handleSubmit} className={styles.form}>
           <label>
             Nombre

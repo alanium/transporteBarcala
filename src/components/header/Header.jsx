@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaPhone } from "react-icons/fa";
 import logo from "../../assets/logo.png";
 
 function Header() {
-  const phoneNumber = "123-456-7890";
+  const phoneNumber = "+5491131486466";
 
   const handleContact = () => {
     // Copia el número de teléfono al portapapeles
@@ -23,14 +23,14 @@ function Header() {
     <div className={styles.header}>
       <div className="left">
         <a
-          href="https://www.instagram.com/"
+          href="https://www.instagram.com/transportebarcalaoficial/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaInstagram className={styles.icon} />
         </a>
         <a
-          href="https://www.facebook.com/"
+          href="https://www.facebook.com/transporte.barcala/?locale=es_LA"
           target="_blank"
           rel="noopener noreferrer"
         >

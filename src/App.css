@@ -48,3 +48,17 @@
 .bttn:hover {
   color: black;
 }
+
+.flota {
+  width: 100%; /* Ocupa todo el ancho */
+  height: 70%; /* Ocupa el 70% de la altura del contenedor */
+}
+
+.horarios {
+  width: 100%; /* Ocupa todo el ancho */
+  height: 30%; /* Ocupa el 30% de la altura del contenedor */
+}
+
+.full-screen-container{
+  height: 100vh;
+}
