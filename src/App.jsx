@@ -26,7 +26,7 @@ function App() {
   };
 
   const handleContactSubmit = (formData) => {
-    const phoneNumber = "+5491131486466";
+    const phoneNumber = "+5491131486380";
     const message = `Hola, soy ${formData.name}. Mi dirección de origen es ${formData.origin} y mi dirección de destino es ${formData.destination}. ¿Podríamos discutir más detalles sobre el servicio?`;
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -50,7 +50,6 @@ function App() {
             <div className="background">
               <Header />
               <div>
-                <CalculateDistance />
                 <button className="bttn" onClick={openContactModal}>
                   Contactar
                 </button>
@@ -73,7 +72,7 @@ function App() {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className="white-background">
+        <SwiperSlide>
           <div className="reviews-container">
             <Reviews placeId={"ChIJ8ZQp-Mu4vJURoCAJDdkRaNg"} />
           </div>

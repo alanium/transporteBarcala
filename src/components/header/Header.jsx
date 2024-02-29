@@ -4,7 +4,7 @@ import { FaInstagram, FaFacebook, FaPhone } from "react-icons/fa";
 import logo from "../../assets/logo.png";
 
 function Header() {
-  const phoneNumber = "+5491131486466";
+  const phoneNumber = "+5491131486380";
 
   const handleContact = () => {
     // Copia el número de teléfono al portapapeles

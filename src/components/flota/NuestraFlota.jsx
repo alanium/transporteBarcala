@@ -8,6 +8,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import image1 from "../../assets/image1.png";
 import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
+import image4 from "../../assets/image4.png";
 
 function Flota() {
   const progressCircle = useRef(null);
@@ -55,6 +56,12 @@ function Flota() {
           <SwiperSlide>
             <div className={styles["image-container"]}>
               <img src={image3} alt="Imagen 3" className={styles.image} />
+              <p>Ford F-100</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className={styles["image-container"]}>
+              <img src={image4} alt="Imagen 4" className={styles.image} />
               <p>Ford F-100</p>
             </div>
           </SwiperSlide>

@@ -18,7 +18,7 @@ function Horarios() {
   };
 
   const handleContactSubmit = (formData) => {
-    const phoneNumber = '+5491131486466';
+    const phoneNumber = '+5491131486380';
     const message = `Hola, soy ${formData.name}. Mi dirección de origen es ${formData.origin} y mi dirección de destino es ${formData.destination}. ¿Podríamos discutir más detalles sobre el servicio?`;
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
@@ -49,17 +49,14 @@ function Horarios() {
         <div className={styles.divisionContainer}></div>
       </div>
       <div className={styles.right}>
-        <h2 className={styles.title}>NUESTROS HORARIOS</h2>
-        <div className={styles.schedule}>
-          <p>
+          <p className={styles.schedule}>
+          <h2 className={styles.title}>Nuestros Horarios</h2>
             <span className={styles.day}>Lunes a Viernes</span>{" "}
-            <span className={styles.time}>6am - 12pm</span>
-          </p>
-          <p>
+            <span className={styles.time}>6am - 18pm</span>
+            <div className={styles.divider}></div>
             <span className={styles.day}>Sábado a Domingo</span>{" "}
-            <span className={styles.time}>6pm - 11pm</span>
+            <span className={styles.time}>6pm - 18pm</span>            
           </p>
-        </div>
         <div className={styles.divisionContainer}></div>
       </div>
     </div>
