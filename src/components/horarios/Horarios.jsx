@@ -55,7 +55,7 @@ function Horarios() {
             <span className={styles.time}>6am - 18pm</span>
             <div className={styles.divider}></div>
             <span className={styles.day}>Sábado a Domingo</span>{" "}
-            <span className={styles.time}>6pm - 18pm</span>            
+            <span className={styles.time}>6am - 18pm</span>            
           </p>
         <div className={styles.divisionContainer}></div>
       </div>
